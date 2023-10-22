@@ -25,19 +25,35 @@ const Parallax = ({ type }) => {
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What We Did?"}
+        Ashna Srivastava
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
+      <motion.div className="mountains" />
       <motion.div
         className="planets"
         style={{
           y: yBg,
-          backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
-          })`,
+          backgroundImage: `url(${"/planets.png"})`,
         }}
-      ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      />
+      <motion.div
+        className="astronaut"
+        style={{
+          y: yBg,
+          backgroundImage: `url(${"/astronaut-star.png"})`,
+        }}
+        animate={{
+          y: [0, 10, 0], // Y-axis animation values
+          transition: {
+            y: {
+              duration: 3, // Duration of the animation (in seconds)
+              repeat: Infinity, // Repeat the animation indefinitely
+              repeatType: 'reverse', // Reverse animation direction when repeating
+              ease: 'easeInOut', // Easing function
+            },
+          },
+        }}
+      />
+      <motion.div style={{ x: yBg }} className="stars" />
     </div>
   );
 };

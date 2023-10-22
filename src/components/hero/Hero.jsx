@@ -31,7 +31,7 @@ const sliderVariants = {
     x: "-220%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 20,
     },
   },
@@ -47,22 +47,17 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
+          <motion.h2 variants={textVariants}>Ashna Srivastava</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+            Fullstack + Android dev
           </motion.h1>
+          {/* change these to reactive github/social buttons */}
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
               See the Latest Works
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
-          <motion.img
-            variants={textVariants}
-            animate="scrollButton"
-            src="/scroll.png"
-            alt=""
-          />
         </motion.div>
       </div>
       <motion.div
@@ -73,9 +68,6 @@ const Hero = () => {
       >
         Writer Content Creator Influencer
       </motion.div>
-      <div className="imageContainer">
-        <img src="/hero.png" alt="" />
-      </div>
     </div>
   );
 };

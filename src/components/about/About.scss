@@ -1,0 +1,14 @@
+@import "../../app.scss";
+@import '@fontsource/spicy-rice';
+
+.slidingTextContainer {
+    background-position: bottom;
+    font-family: 'Spicy Rice', sans-serif;
+    font-size: 40px;
+    white-space: nowrap;
+    color: #EFC3F5;
+    width: 50%;
+    font-weight: bold;
+    z-index: 5;
+    bottom: 0;
+}
